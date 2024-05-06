@@ -3,7 +3,6 @@
     font-family: Roboto, arial;
     margin:0 0 10px 0;
     background-color: rgb(226, 224, 224);
-    
 }
 
 
@@ -16,7 +15,7 @@
     align-items: center;
     background-color: #c2a184;
     padding:10px 10px 10px 10px;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .page-title{

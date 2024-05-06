@@ -1,134 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitchen</title>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/kitchen.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <script src="js/Kitchen.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div id="toast">
-        <div class="container-1">
-          <i class="fas fa-check-square"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchen</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/kitchen.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="js/Kitchen.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="
+            https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css
+        " rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <div class="bg">
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="icons/logo.svg" alt="Furniture Store Logo"></a>
+      </div>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="What is on your mind?" name="s">
+          <button type="submit"><img src="icons/search.svg"></button>
+        </form>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="offer.html">Offers</a></li>
+        <li><a href="Tips and ideas.html">Ideas</a></li>
+        <li><a href="about us,contact us.html">About Us</a></li>
+        <li><a href="about us,contact us.html">Contact Us</a></li>
+        <li class="categories-dropdown">
+          <a href="#">Categories</a>
+          <ul class="categories-dropdown-content">
+            <li><a href="bathroom.html">Bathrooms</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="living.html">Living </a></li>
+            <li><a href="dining room.html">Dining</a></li>
+            <li><a href="office.html">Offices</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="lighting.html">Lighting</a></li>
+            <li><a href="outdoors.html">Outdoors</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <label class="theme-toggle" title="Toggle theme">
+        <input type="checkbox" />
+        <span class="theme-toggle-sr">Toggle theme</span>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1em" height="1em" fill="currentColor"
+          stroke-linecap="round" class="theme-toggle__classic" viewBox="0 0 32 32">
+          <clipPath id="theme-toggle_classic_cutout">
+            <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+          </clipPath>
+          <g clip-path="url(#theme-toggle_classic_cutout)">
+            <circle cx="16" cy="16" r="9.34" />
+            <g stroke="currentColor" stroke-width="1.5">
+              <path d="M16 5.5v-4" />
+              <path d="M16 30.5v-4" />
+              <path d="M1.5 16h4" />
+              <path d="M26.5 16h4" />
+              <path d="m23.4 8.6 2.8-2.8" />
+              <path d="m5.7 26.3 2.9-2.9" />
+              <path d="m5.8 5.8 2.8 2.8" />
+              <path d="m23.4 23.4 2.9 2.9" />
+            </g>
+          </g>
+        </svg>
+      </label>
+      <a class="cart-link" href="Add to cart.html"><i class="fa badge fa-lg" value=0>&#xf07a;</i></a>
+      <h3 class="profile-name">Name</h3>
+      <button class="logout-button">Logout</button>
+      <button class="login-button">Login</button>
+    </nav>
+  </div>
+  <div class="wrapper">
+    <div id="toast">
+      <div class="container-1">
+        <i class="fas fa-check-square"></i>
+      </div>
+      <div class="container-2">
+        <p>Success</p>
+        <p>The item has been successufly Added.</p>
+      </div>
+      <button id="close" onclick="closeToast()">&times;</button>
+    </div>
+  </div>
+  <div class="shader hidden">
+    <div class="product-detitls">
+      <img src="images/Kitchen-pic-1.png" alt="product" />
+      <button class="close"><i class="ri-close-line"></i></button>
+      <div class="content">
+        <h1>Product Name</h1>
+        <h2>Price</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+          repudiandae doloribus quae quos quia quibusdam quidem voluptatum
+          repudiandae doloribus.
+        </p>
+        <h3>Quantity</h3>
+        <div class="quantity">
+          <button class="minus"><i class="ri-subtract-line"></i></button>
+          <input type="number" value="1" class="quantity-value" />
+          <button class="plus"><i class="ri-add-line"></i></button>
         </div>
-        <div class="container-2">
-          <p>Success</p>
-          <p>The item has been successufly Added.</p>
+        <div class="btns">
+          <button class="add">
+            Add to Cart<i class="ri-shopping-cart-line"></i>
+          </button>
+          <button class="check-out">
+            Check Out<i class="ri-shopping-cart-fill"></i>
+          </button>
         </div>
-        <button id="close" onclick="closeToast()">&times;</button>
       </div>
     </div>
-    <div class="shader hidden">
-      <div class="product-detitls">
+  </div>
+  <section class="shop">
+    <div class="header">
+      <h1>Kitchen</h1>
+      <hr />
+    </div>
+    <div class="filter">
+      <div class="search">
+        <input type="text" placeholder="Search..." id="productSearch" />
+      </div>
+      <button><i class="ri-search-line"></i></button>
+      <div class="sort">
+        <select name="sort" id="sort">
+          <option value="1">Sort By</option>
+          <option value="2">Price: Low to High</option>
+          <option value="3">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
         <img src="images/Kitchen-pic-1.png" alt="product" />
-        <button class="close"><i class="ri-close-line"></i></button>
-        <div class="content">
-          <h1>Product Name</h1>
-          <h2>Price</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
-            repudiandae doloribus quae quos quia quibusdam quidem voluptatum
-            repudiandae doloribus.
-          </p>
-          <h3>Quantity</h3>
-          <div class="quantity">
-            <button class="minus"><i class="ri-subtract-line"></i></button>
-            <input type="number" value="1" class="quantity-value" />
-            <button class="plus"><i class="ri-add-line"></i></button>
-          </div>
-          <div class="btns">
-            <button class="add">
-              Add to Cart<i class="ri-shopping-cart-line"></i>
-            </button>
-            <button class="check-out">
-              Check Out<i class="ri-shopping-cart-fill"></i>
-            </button>
-          </div>
+        <h4>Venus Kitchen</h4>
+        <h5>50,000 EGP</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/Kitchen-pic-2.png" alt="product" />
+        <h4>Dana model kitchen</h4>
+        <h5>30,000 EGP</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/Kitchen-pic-3.png" alt="product" />
+        <h4>Joker Kitchen</h4>
+        <h5>45,000 EGP</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/Kitchen-pic-4.png" alt="product" />
+        <h4>Product 1</h4>
+        <h5>20,500</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/Kitchen-pic-5.png" alt="product" />
+        <h4>Product 1</h4>
+        <h5>100,000 EGP</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/Kitchen-pic-6.png" alt="product" />
+        <h4>Product 1</h4>
+        <h5>15,000 EGP</h5>
+        <div class="cart">
+          <a><i class="ri-shopping-cart-line"></i></a>
         </div>
       </div>
     </div>
-    <section class="shop">
-      <div class="header">
-        <h1>Kitchen</h1>
-        <hr />
-      </div>
-      <div class="filter">
-        <div class="search">
-          <input type="text" placeholder="Search..." id="productSearch" />
-        </div>
-        <button><i class="ri-search-line"></i></button>
-        <div class="sort">
-          <select name="sort" id="sort">
-            <option value="1">Sort By</option>
-            <option value="2">Price: Low to High</option>
-            <option value="3">Price: High to Low</option>
-          </select>
-        </div>
-      </div>
-      <div class="container">
-        <div class="product">
-          <img src="images/Kitchen-pic-1.png" alt="product" />
-          <h4>Venus Kitchen</h4>
-          <h5>50,000 EGP</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="images/Kitchen-pic-2.png" alt="product" />
-          <h4>Dana model kitchen</h4>
-          <h5>30,000 EGP</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="images/Kitchen-pic-3.png" alt="product" />
-          <h4>Joker Kitchen</h4>
-          <h5>45,000 EGP</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="images/Kitchen-pic-4.png" alt="product" />
-          <h4>Product 1</h4>
-          <h5>20,500</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="images/Kitchen-pic-5.png" alt="product" />
-          <h4>Product 1</h4>
-          <h5>100,000 EGP</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-        <div class="product">
-          <img src="images/Kitchen-pic-6.png" alt="product" />
-          <h4>Product 1</h4>
-          <h5>15,000 EGP</h5>
-          <div class="cart">
-            <a><i class="ri-shopping-cart-line"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+  </section>
+  <!--   footer -->
+  <div class="social-media">
+    <div class="left-text">
+      Follow us on social media platforms:
+    </div>
+    <div class="social-icons">
+      <a href="#" class="icon"><img src="icons/icons8-facebook.svg"></a>
+      <a href="#" class="icon"><img src="icons/icons8-instagram.svg"></a>
+      <a href="#" class="icon"><img src="icons/icons8-whatsapp.svg"></a>
+      <a href="#" class="icon"><img src="icons/icons8-twitterx.svg"></a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="logof">
+      <img src="icons/logo.svg" alt="Furniture Store Logo">
+    </div>
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>
+        <strong>Email:</strong> info@Harmonyhome.com<br>
+        <strong>Phone:</strong> +20 (123) 456-789<br>
+        <strong>Address:</strong> 123 Helwan St, Cairo, Egypt
+      </p>
+    </div>
+    <div class="about-us">
+      <h3>About Us</h3>
+      <p>You Deserve The Best...</p>
+    </div>
+    <div class="copyright">
+      <span>&copy; 2024 Harmony Home</span>
+    </div>
+  </footer>
+</body>
+
 </html>

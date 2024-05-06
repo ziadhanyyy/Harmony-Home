@@ -1,19 +1,12 @@
-/* Reset default styles */
+/* START HEADER */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-image: url("../images/HomePage-pic-12.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 85vh;
-}
-
 .bg{
     width: 100%;
-    height: 87vh;
+    height: 12vh;
     background-image: linear-gradient(rgba(0,0,0,0.75) , rgba(0,0,0,0.75)),url("../images/HomePage-pic-12.jpeg");
     background-position: center;
     background-size: cover;
@@ -29,7 +22,7 @@ body {
 }
 
 .logo img {
-    width: 150px;
+    width: 160px;
     height: 120px; 
     margin-top: 10px;
     margin-left: 40px;
@@ -55,6 +48,7 @@ body {
     color: white; 
     font-size: 1.3rem;
 }
+
 .badge:after{
     content:attr(value);
     font-size:16px;
@@ -73,10 +67,24 @@ body {
     color: #000;
 }
 
-
 /* Login  */
 .login-button {
     background-color: #3498db; /* Customize login button color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-name{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 0.2rem;
+}
+.logout-button{
+    background-color: #e74c3c;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -122,7 +130,7 @@ padding: 10px;
    border-top: none;
 }
 .search{
-    width:20%;
+    width:30%;
     height: 60px;
     margin-top: 20px;
   }
@@ -164,165 +172,11 @@ padding: 10px;
     text-decoration: none;
     margin-left: 1rem;
 }
-/*========================================*/
-.slogan {
-    font-family: "Robot", sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    padding: 4rem;
-    text-align: center;
-}
-.photo-container {
-    display: flex; 
-    height: 400px ;
-    width: 90%;
-    justify-content: space-between;
-   background-color:transparent;
-   align-items: center;
-   margin-left: 5%;
 
-}
+/* END HEADER */
 
-.photo {
-    flex: 1; 
-    text-align: center;
-    justify-content: space-between;
-}
-.photo img {
-    border-radius: 15px;
-    width: 400px;
-    height: 300px;
-  transition-duration: 0.3s;
-}
-.photo img:hover {
-    width: 600px;
-    height: 400px;
+/* START FOOTER */
 
-}
-
-.photo p {
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    
-    
-}
-.photo p a{
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 7px;
-    text-decoration: none;
-    border-radius: 5px;
-    color:#bb9c36;
-    
-
-}
-.photo p a:hover {
-    background-color: black;
-    border-radius: 5px;
-    color:#fff;
-    
-
-}
-
-.photo-container1 {
-    display: flex;
-    height: 400px ;
-    width: 100%;
-    justify-content: space-between;
-   background-color:white;
-   align-items: center;;
-
-}
-.photo1 {
-    flex: 1; 
-    text-align: center;
-    justify-content: space-between;
-}
-.photo1 img {
-    border-radius: 15px;
-    width: 300px;
-    height: 200px;
-
-}
-
-
-.photo1 p {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    
-    
-}
-.photo1 p a{
-    padding: 7px;
-    text-decoration: none;
-    color: #0b0b0b;
-    
-
-}
-.photo1 p a:hover{
-    border: 2px solid #0b0b0b;
-    border-top:none;
-    border-right:none;
-    border-left:none;
-
-}
-
-.photo-container2 {
-    display: flex;
-    height: 400px ;
-    width: 100%;
-    justify-content: space-between;
-   background-color:white;
-   align-items: center;
-   border: 2px solid #0b0b0b;
-   border-left: none;
-   border-right: none;
-   border-bottom: none;
-  
-
-
-}
-
-
-.photo2 {
-    flex: 1; 
-    text-align: center;
-    justify-content: space-between;
-}
-.photo2 img {
-    border-radius: 15px;
-    width: 300px;
-    height: 200px;
-
-}
-
-
-.photo2 p {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    
-    
-}
-.photo2 p a{
-    padding: 7px;
-    text-decoration: none;
-    color: #0b0b0b;
-    
-
-}
-.photo2 p a:hover{
-    border: 2px solid #0b0b0b;
-    border-top:none;
-    border-right:none;
-    border-left:none;
-
-}
-/*===================================*/
 .social-media {
     font-family:  Arial, sans-serif;
     background-color: #ffd97f;
@@ -385,18 +239,4 @@ padding: 10px;
     font-size: 14px;
     color: #888;
 }
-.profile-name{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 1rem;
-    margin-right: 0.2rem;
-}
-.logout-button{
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+/* END FOOTER */

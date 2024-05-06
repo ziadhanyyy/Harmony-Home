@@ -12,6 +12,7 @@ body{
     background: #ffffff;
     color: #121212;
 }
+
 section{
     padding: 100px 8%;
 }
@@ -78,6 +79,11 @@ section{
     box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 20%);
 }
 
+.shop{
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
 .shop .header hr{
     width: 100px;
     height: 2px;
@@ -109,6 +115,7 @@ section{
     outline: none;
     font-size: 16px;
     letter-spacing: 1px;
+    margin-top: 0px;
 }
 .filter .search input{
     width: 100%;

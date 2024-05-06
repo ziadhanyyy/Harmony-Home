@@ -16,7 +16,7 @@ $(document).ready(function () {
     const email = $("#login-email").val().split("@")[0];
     localStorage.setItem("auth", 1);
     localStorage.setItem("email", email);
-    window.location.replace("/kitchen.html");
+    window.location.replace("/index.html");
   });
 
   $(".login-form").on("submit", function (e) {
