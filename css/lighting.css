@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+background-color: white;
+
+} 
+
+
+h1{
+    font-family: "Indie Flower", cursive;
+  font-weight: 700px;
+  font-style: normal;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.CartBtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #505081;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    margin-left: 80px;
+    margin-top: 5px;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+  }
+  
+  .CartBtn:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+  .product {
+    background-color:white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    float: left; 
+    margin-right: 10px;
+    box-shadow: 0 5px 5px #757676;
+    border-radius: 40px;
+  }
+
+  .product img {
+    width: 290px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left:5px;
+    border-radius: 30px;
+
+  }
+
+  h2{
+    margin-top: 1px;
+    margin-left: 20px;
+  }
+  h3{
+    margin-top: 3px;
+    margin-left: 115px;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    margin-left: 600px;
+    width: 700px;
+
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 40px #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #3d3b3b;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f4f2f2;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+    margin-right: 700px;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: black;
+  }

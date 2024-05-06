@@ -1,0 +1,285 @@
+.webpage
+{
+    background-color: rgb(227, 226, 226);
+    font-family: Roboto, arial;
+    margin-top: 150px;
+    height: 3000px;
+}
+
+
+/*==============Page Title==============*/
+
+.titleborder
+{
+    margin-left: 525px;
+    border-bottom-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    width: 500px;
+    padding-left: 350px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.titleborder:hover
+{
+    transform: translateY(-5px);
+}
+
+.title
+{
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(48, 84, 84);
+    font-family: Lugrasimo;
+}
+
+/*===============================================*/
+
+
+/*==============Bar==============*/
+
+.bar
+{
+    display: flex;
+    background-color: rgba(182, 199, 72, 0.6);
+    height: 50px;
+    border-bottom-width: 1px;
+    border-color: rgba(155, 155, 155, 0.3);
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 500px;
+    padding-right: 600px;
+}
+
+.bar:hover
+{
+    transform: translateY(-5px);
+}
+
+.searchbar
+{
+    border: none;
+    padding: 10px;
+    border-radius: 80px;
+    width: 500px;
+    background-color: rgb(227, 226, 226);
+    flex: 1;
+}
+
+input.searchbar:focus {
+    outline-width: 0;
+}
+
+.magnifierbox
+{
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.25s;
+    margin-top: 5px;
+    border-radius: 60px;
+    cursor: pointer;
+    margin-left: -120px;
+
+}
+
+.magnifierbox:hover
+{
+    background-color: rgba(155, 155, 155, 0.4);
+}
+
+.magnifier
+{
+    width: 27px;
+    height: 27px;
+}
+
+.sort
+{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(227, 226, 226);
+    border-radius: 30px;
+    border: none;
+    padding-left: 5px;
+    flex: 1;
+}
+
+select.sort:focus {
+    outline-width: 0;
+}
+
+/*==============================================*/
+
+/*Products Bar*/
+
+.productsmenu
+{
+    width: 1755px;
+    border-style: solid;
+    border-color: rgba(155, 155, 155, 0.3);
+    border-width: 1px;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.productsmenu:hover
+{
+    transform: translateY(-5px);
+}
+
+/*========================================*/
+
+
+/*Product Box*/
+
+.productbox
+{
+    display: flex;
+    border-radius: 8px;
+    height: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 5px rgba(155, 155, 155, 0.4);
+}
+
+.productbox:hover
+{
+    transform: translateY(-5px);
+}
+
+/*===============================================*/
+
+/*Interior of Product Box*/
+
+.imagebox
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.text
+{
+    margin-top: 10px;
+}
+
+.productimage
+{
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+}
+
+.addtocart
+{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.addtocart:hover
+{
+    transform: translateY(-5px);
+}
+
+.productname
+{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.productname:hover
+{
+    text-decoration: underline;
+}
+
+.productdescription
+{
+    font-size: 20px;
+}
+
+.buy
+{
+    background-color: rgb(227, 226, 226);
+    border: 2px solid rgb(48, 84, 84);
+    border-radius: 80px;
+    cursor: pointer;
+    height: 45px;
+    width: 120px;
+    color: black;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+    box-shadow: 5px 5px 5px rgba(155, 155, 155, 0.3);
+    margin-right: 12px;
+}
+
+.buy:hover
+{
+    background-color: rgb(48, 84, 84);
+    text-decoration: underline;
+}
+
+.buy:active
+{
+    background-color: rgba(48, 84, 84, 0.2);
+    text-decoration: underline;
+}
+
+.add_to_cart
+{
+    background-color: rgb(227, 226, 226);
+    border: 2px solid rgb(48, 84, 84);
+    border-radius: 80px;
+    cursor: pointer;
+    height: 45px;
+    width: 120px;
+    color: black;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+    box-shadow: 5px 5px 5px rgba(155, 155, 155, 0.3);
+    margin-right: 12px;
+}
+
+.add_to_cart:hover
+{
+    background-color: rgb(48, 84, 84);
+    text-decoration: underline;
+}
+
+.add_to_cart:active
+{
+    background-color: rgba(48, 84, 84, 0.2);
+    text-decoration: underline;
+}
+
+.se3r
+{
+    font-weight: 500;
+}
+
+

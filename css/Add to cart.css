@@ -1,0 +1,257 @@
+.webpage
+{
+    background-color: rgb(227, 226, 226);
+    font-family: Roboto, arial;
+    height: 3000px;
+    margin-top: 150px;
+}
+
+.menu_prices
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Menu */
+
+.menu
+{
+    background-color: white;
+    margin-left: 20px;
+    width: 1300px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.scroll
+{
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.menu:hover
+{
+    transform: translateY(-5px);
+}
+
+.shoppingcart
+{
+    color: rgb(79,81,125);
+    font-size: 35px;
+    font-weight: 500;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+/*===================================*/
+
+/* Product List */
+
+.product
+{
+    display: flex;
+    box-shadow: 3px 3px 3px rgba(155, 155, 155, 0.5);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    width: 1270px;
+}   
+
+.product:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 4px rgba(155, 155, 155, 0.5)
+}
+
+.productimage
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cartdetails
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+}
+
+.text
+{
+    margin-top: 5px;
+}
+
+.text:hover
+{
+    cursor: pointer;
+}
+
+.productname
+{
+    font-weight: 500;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productname:hover
+{
+    text-decoration: underline;
+}
+
+.slash
+{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productdesc
+{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.productdesc:hover
+{
+    text-decoration: underline;
+}
+
+.stocked
+{
+    color: darkgreen;
+    margin-bottom: 0;
+}
+
+.price
+{
+    margin-bottom: 0px;
+}
+
+.qty
+{
+    display: inline-block;
+}
+
+.number
+{
+    border-radius: 10px;
+    padding-left: 3px;
+}
+
+select.number:focus {
+    outline-width: 0;
+}
+
+.delete
+{
+    color: white;
+    padding: 10px;
+    width: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(169,151,223);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    box-shadow: 2px 2px 8px rgba(155, 155, 155, 0.4);
+}
+
+.delete:hover
+{
+    background-color: rgba(169,151,223,0.7);
+    text-decoration: underline;
+}
+
+.delete:active
+{
+    background-color: rgba(169,151,223,0.4);
+    text-decoration: underline;
+}
+
+/*=========================================================================*/
+
+/* Total Prices */
+
+.totalprice
+{
+    height: 130px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.totalprice:hover
+{
+    transform: translateY(-5px);
+}
+
+.title
+{
+    margin-top: 3px;
+    font-weight: 500;
+    color: rgb(79,81,125);
+    font-size: 20px;
+}
+
+.checkout
+{
+    margin-left: 80px;
+    width: 250px;
+    border-radius: 80px;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(155, 155, 155, 0.4);
+    background-color: rgb(169,151,223);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    box-shadow: 2px 2px 8px rgba(155, 155, 155, 0.4);
+    height: 30px;
+    padding-bottom: 3px;
+}
+
+.checkout:hover
+{
+    background-color: rgba(169,151,223,0.7);
+}
+
+.checkout:active
+{
+    background-color: rgba(169,151,223,0.4);
+}
+
+.priceslist
+{
+    list-style-type: none;
+    color: rgb(154, 129, 227);
+
+}
+
+.priceslist li
+{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
+

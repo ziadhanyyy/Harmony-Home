@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="/css/register.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/register.js"></script>
+  </head>
+  <body>
+    <div class="register">
+      <img
+        src="images/login-pic-1.jpeg"
+        alt="register image"
+        class="register-img"
+      />
+      <form action="" class="register-form">
+        <h1 class="register-title">Register</h1>
+        <div class="register-content">
+          <div class="register-box">
+            <i class="ri-user-3-line register-icon"></i>
+            <div class="register-box-input">
+              <input type="email" required class="register-input" id="register-email" placeholder=" "/>
+              <label for="register-email" class="register-label">Email</label>
+            </div>
+          </div>
+          <div class="register-box">
+            <i class="ri-lock-2-line register-icon"></i>
+            <div class="register-box-input">
+              <input type="password" required class="register-input" id="register-pass" placeholder=" "/>
+              <label for="register-pass" class="register-label">Password</label>
+              <i class="ri-eye-off-line register-eye" id="register-eye"></i>
+            </div>
+          </div>
+          <div class="register-box">
+            <i class="ri-lock-2-line register-icon"></i>
+            <div class="register-box-input">
+              <input type="password" required class="register-input" id="register-conf-pass" placeholder=" "/>
+              <label for="register-pass" class="register-label">Confirm Password</label>
+              <i class="ri-eye-off-line register-eye" id="register-conf-eye"></i>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="register-button" id="register-btn">Sign up</button>
+        <p class="register-login"> Have an account? <a href="/login.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>

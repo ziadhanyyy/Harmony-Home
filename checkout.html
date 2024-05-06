@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>CheckOut</title>
+        <link rel="stylesheet" href="/css/checkout.css">
+        <link rel="stylesheet" href="/css/Website.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <script>
+            function upperCase() {
+              const x = document.getElementById("cardname");
+              x.value = x.value.toUpperCase();
+            }
+
+
+            function validateNumeric() {
+            
+                let x = document.getElementById("cvv").value;
+
+                let text;
+                if (isNaN(x) || x < 100 || x > 999) {
+                    text = "Input not valid";
+                }else{
+                    text= "valid!"
+                }
+                document.getElementById("message").innerHTML = text;
+            }
+
+
+            function validateForm() {
+                let x = document.forms["payment"]["payment-method"].value;
+                if (x == "") {
+                    alert("Payment method must be filled out");
+                    return false;
+                }
+            }
+
+        </script>
+    
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <img src="/icons/logo.svg" class="logo">
+            <div style="display: flex; flex-direction: row; margin-left: 250px;">
+                <a class="pages" href="">Home </a>
+                <p style="color: rgb(90, 89, 89); margin-top: 0; margin-left: 3px; margin-right: 3px;"> > </p>
+                <a class="pages" href=""> Cart </a>
+                <p style="color: rgb(90, 89, 89); margin-top: 0;margin-left: 3px; margin-right: 3px;"> > </p>
+                <p class="pages"> Checkout</p>
+            </div>
+            
+        </div>
+        
+
+
+        <form>
+        <div class="all">
+        <div class="form">
+            <p class="page-name">Billing Address</p>
+            <div class="name">
+                <div class="first-name">
+                     <input type="text" class="input-text" placeholder="First name" required>
+  
+                </div>
+                <div class="last-name">    
+                    <input type="text" class="input-text" placeholder="Last name" required>
+                </div>
+            </div>
+
+            <div>
+                <select class="input-text-bigger">
+                    <optgroup label="select a governorate">
+                        <option>Select a Governorate</option>
+                        <option > Alexandia</option>
+                        <option >Aswan</option>
+                        <option>Asyut</option>
+                        <option >Behera</option>
+                        <option >Cairo</option>
+                        <option >Giza</option>
+                        <option >Luxor</option>
+                        <option>Port-Said</option>
+                        <option >Ismaalya</option>
+                        <option  >Red sea</option>
+                    </optgroup>
+                    </select>
+            </div>
+
+            <div class="phone">
+                <div> <p class="texts">+20</p> </div>
+                <div> <input type="tel" class="phone-box" placeholder="XXXXXXXXXX" required> </div>
+            </div>
+
+            <div>
+                <input type="email" class="input-text-bigger" placeholder="you@example.com">
+            </div>
+            <div class="address">
+                <input type="text" class="input-text-bigger" placeholder="Address" required>
+            </div>
+
+            <div>
+                <input type="text" class="input-text-bigger" placeholder="Building Name/Apartment No./Floors No.">
+            </div>
+
+            <div class="buttons">
+                <div class="checkbox">
+                    <input name="shipping" type="checkbox">
+                    <label for="shipping" class="texts">Use as shipping address</label>
+                </div>
+                
+                <input  type="submit" onclick="myFunction()" value="Confirm" class="submit-button" >
+            </div>
+
+            
+        </div>
+    </form>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+
+        
+        <form name="payment" onsubmit="return validateForm()" method="post">
+        <div class="payment">
+
+            <p class="page-name">Payment</p>
+
+            <div style="margin-bottom: 20px;">
+                <p class="labels">Choose payment method:</p>
+                <input type="radio" name="payment-method" value="credit">
+                <label for="credit" class="texts">Credit/Debit card</label><br>
+                <input type="radio" name="payment-method" value="paypal">
+                <label for="paypal" class="texts">Paypal</label><br>
+            </div>
+
+            <div>
+
+                <label for="card-name" class="labels">Name on card</label><br>
+                <input type="text" class="card-name" name="card-name" id="cardname" oninput="upperCase()" required>
+   
+            </div>
+
+            <div style="margin-top: 20px;">
+                <label for="card-number" class="labels">Card number</label><br>
+                <div class="input-container">
+                <i class="bi bi-credit-card"></i>
+                <input type="text" class="card" name="card-number" placeholder="XXXX XXXX XXXXXX" required>
+                </div>
+            </div>
+
+
+
+            <div class="card-details">
+                <div>
+                    <label for="expiry" class="labels">Expiry</label><br>
+                    <input type="text" class="input-text-smaller" name="expiry" placeholder="MM/YY">
+                </div>
+
+                <div>
+                    <label for="cvv"  class="labels">CVV/CVC</label><br>
+                    <input type="password" class="input-text-smaller" name="cvv" id="cvv" placeholder="XXX" required>
+                    <p id="message"></p>
+                </div>
+                
+            </div>
+
+            <div style="text-align: right;">
+                <input  type="submit" onclick="myFunction()" value="Purchase" class="submit-button" >
+            </div>
+
+        </div>
+        </div>
+        </form>
+    
+       
+    </body>
+    </html>

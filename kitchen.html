@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/kitchen.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="/js/Kitchen.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="toast">
+        <div class="container-1">
+          <i class="fas fa-check-square"></i>
+        </div>
+        <div class="container-2">
+          <p>Success</p>
+          <p>The item has been successufly Added.</p>
+        </div>
+        <button id="close" onclick="closeToast()">&times;</button>
+      </div>
+    </div>
+    <div class="shader hidden">
+      <div class="product-detitls">
+        <img src="/images/Kitchen-pic-1.png" alt="product" />
+        <button class="close"><i class="ri-close-line"></i></button>
+        <div class="content">
+          <h1>Product Name</h1>
+          <h2>Price</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+            repudiandae doloribus quae quos quia quibusdam quidem voluptatum
+            repudiandae doloribus.
+          </p>
+          <h3>Quantity</h3>
+          <div class="quantity">
+            <button class="minus"><i class="ri-subtract-line"></i></button>
+            <input type="number" value="1" class="quantity-value" />
+            <button class="plus"><i class="ri-add-line"></i></button>
+          </div>
+          <div class="btns">
+            <button class="add">
+              Add to Cart<i class="ri-shopping-cart-line"></i>
+            </button>
+            <button class="check-out">
+              Check Out<i class="ri-shopping-cart-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="shop">
+      <div class="header">
+        <h1>Kitchen</h1>
+        <hr />
+      </div>
+      <div class="filter">
+        <div class="search">
+          <input type="text" placeholder="Search..." id="productSearch" />
+        </div>
+        <button><i class="ri-search-line"></i></button>
+        <div class="sort">
+          <select name="sort" id="sort">
+            <option value="1">Sort By</option>
+            <option value="2">Price: Low to High</option>
+            <option value="3">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div class="container">
+        <div class="product">
+          <img src="/images/Kitchen-pic-1.png" alt="product" />
+          <h4>Venus Kitchen</h4>
+          <h5>50,000 EGP</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <img src="/images/Kitchen-pic-2.png" alt="product" />
+          <h4>Dana model kitchen</h4>
+          <h5>30,000 EGP</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <img src="/images/Kitchen-pic-3.png" alt="product" />
+          <h4>Joker Kitchen</h4>
+          <h5>45,000 EGP</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <img src="/images/Kitchen-pic-4.png" alt="product" />
+          <h4>Product 1</h4>
+          <h5>20,500</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <img src="/images/Kitchen-pic-5.png" alt="product" />
+          <h4>Product 1</h4>
+          <h5>100,000 EGP</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+        <div class="product">
+          <img src="/images/Kitchen-pic-6.png" alt="product" />
+          <h4>Product 1</h4>
+          <h5>15,000 EGP</h5>
+          <div class="cart">
+            <a><i class="ri-shopping-cart-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
