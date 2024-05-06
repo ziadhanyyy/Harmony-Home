@@ -8,13 +8,13 @@
 .bg{
   width: 100%;
   height: 85px;
-  background-image: linear-gradient(rgba(0,0,0,0.75) , rgba(0,0,0,0.75)),url("/images/HomePage-pic-12.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.75) , rgba(0,0,0,0.75)),url("../images/HomePage-pic-12.jpeg");
   background-position: center;
   background-size: cover;
 }
 /* Navbar */
 .navbar {
-  background-image: url("/images/HomePage-pic-12.jpeg");
+  background-image: url("../images/HomePage-pic-12.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
