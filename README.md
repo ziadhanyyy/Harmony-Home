@@ -11,6 +11,7 @@ This project is a testament to the collaborative efforts of a dedicated team of 
 - Mahmoud Mostafa
 - Hanya Amr
 - Farah Samy
+- Mazen Haytham
 - Ziad Hany
 - Sharf Taher
 - Omar Gamal
