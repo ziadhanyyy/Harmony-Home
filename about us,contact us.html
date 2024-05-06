@@ -1,157 +1,138 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>about us/contact us</title>
-    <style>
-        span {
-            font-weight: bold;
-        }
-
-        input[type=text],
-        textarea {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #CCC;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45A049;
-        }
-
-        div.form {
-            padding: 20px;
-            width: 800px;
-            height: 500;
-            color: white;
-            font-family: sans-serif;
-            margin: auto;
-            margin-top: 20px;
-        }
-
-        body {
-            background: rgb(26, 58, 58);
-            background: linear-gradient(0deg, rgba(26, 58, 58, 1) 25%, rgba(172, 195, 166, 1) 50%);
-        }
-
-        h1 {
-            margin: auto;
-            padding: 10px;
-            width: 450px;
-            color: black;
-            border-bottom: 3px solid black;
-            text-align: center;
-        }
-
-        h2 {
-            margin: 10px 0;
-            padding: 10px;
-            width: 140px;
-            color: black;
-            border-bottom: 3px solid black;
-        }
-
-        p {
-            font-size: x-large;
-            font-family: sans-serif;
-        }
-
-        div.value {
-            width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            font-family: sans-serif;
-            float: inline-start;
-        }
-
-        button {
-            border: outset;
-            width: 10%;
-            background-color: white;
-            color: black;
-            padding: 10px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>About Our Furniture Store</h1> <!-- about us -->
-    <img src="images/about-contact-us-pic-1.jpg" alt="furniture" style="width:400px;height:300px;float:right;
-        border-radius:10px; margin-left:10px;">
-    <p style="font-weight:bold;">Welcome to Harmony Home! We're passionate about providing high-quality,
-        stylish, and functional furniture for your home. Here's what sets us apart:</p>
-    <h2>Our Story</h2>
-    <p>At Harmony Home, our journey began with a simple idea:
-        to create beautiful spaces that reflect your unique style.
-        Whether you're furnishing a cozy apartment or a spacious family home,
-        we believe that every piece of furniture should tell a story.</p>
-    <img src="images/about-contact-us-pic-3.jpg" alt="furniture" style="width:400px;height:500px;float:left;
-        border-radius:10px;margin-bottom:10px;">
-    <div class="value">
-        <h2>Our Values</h2>
-        <ol>
-            <li>
-                <p><span>Quality Craftsmanship:</span>
-                    We source our furniture from skilled artisans who take pride in their work.
-                    Each piece is meticulously crafted to stand the test of time.</p>
-            </li>
-            <li>
-                <p><span>Timeless Designs:</span>
-                    Our collection features a blend of classic and contemporary designs.
-                    From mid-century modern to rustic farmhouse, we have something for every taste.</p>
-            </li>
-            <li>
-                <p><span>Sustainability:</span> We care about the environment.
-                    That's why we prioritize sustainable materials and eco-friendly practices in
-                    our production process.</p>
-            </li>
-        </ol>
-    </div>
-    <img src="images/about-contact-us-pic-2.jpg" alt="furniture" style="width:400px;height:300px;float:right;
+    <head>
+        <title>about us/contact us</title>
+        <style>
+            span { font-weight:bold ; }
+            input[type=text],textarea {
+                width:100%;
+                padding:12px 20px;
+                margin:8px 0;
+                display:inline-block;
+                border:1px solid #CCC;
+                border-radius:4px;
+                box-sizing:border-box;
+            }
+            input[type=submit] {
+                width:100%;
+                background-color:#4CAF50;
+                color:white;
+                padding:14px 20px;
+                margin:8px 0;
+                border:none;
+                border-radius:4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {background-color:#45A049;}
+            div.form {
+                padding:20px;
+                width:800px;
+                height:500;
+                color:white;
+                font-family:sans-serif;
+                margin:auto;
+                margin-top:20px;
+            }
+            body { 
+                background:rgb(26,58,58); 
+                background: linear-gradient(0deg, rgba(26,58,58,1) 25%, rgba(172,195,166,1) 50%);
+            }
+            h1 {
+                margin:auto;
+                padding:10px;
+                width:450px;
+                color:black;
+                border-bottom:3px solid black;
+                text-align:center;
+            }
+            h2 {
+                margin:10px 0;
+                padding:10px;
+                width:140px;
+                color:black;
+                border-bottom:3px solid black;
+            }
+            p { font-size:x-large;
+                font-family:sans-serif;
+            }
+            div.value {
+                width:800px;
+                padding:20px;
+                box-sizing:border-box;
+                font-family:sans-serif;
+                float:inline-start;
+            }
+            button {
+                border:outset;
+                width:10%;
+                background-color:white;
+                color:black;
+                padding:10px;
+                border-radius:20px;
+                cursor:pointer;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About Our Furniture Store</h1> <!-- about us -->
+        <iframe src="/images/about-contact-us-video.mp4" height="200" width="300" 
+        style="width:400px;height:300px;float:right;border-radius:10px;margin-bottom:10px;"></iframe>
+        <p style="font-weight:bold;">Welcome to Harmony Home! We're passionate about providing high-quality, 
+            stylish, and functional furniture for your home. Here's what sets us apart:</p>
+        <h2>Our Story</h2>
+        <p>At Harmony Home, our journey began with a simple idea: 
+            to create beautiful spaces that reflect your unique style. 
+            Whether you're furnishing a cozy apartment or a spacious family home, 
+            we believe that every piece of furniture should tell a story.</p>
+        <img src="/images/about-contact-us-pic-3.jpg" alt="furniture" style="width:400px;height:500px;float:left;
         border-radius:10px;">
-    <h2>Our Promise</h2>
-    <p>When you shop with us, you're not just buying furniture; you're investing in comfort, style,
-        and lasting memories. We're committed to providing exceptional customer service and
-        ensuring that you find the perfect pieces for your home.</p>
-    <button type="button" onclick="myfunction()">Click me!</button>
-    <p id="click" style="font-weight:bold;"></p>
-    <script>
-        function myfunction() { document.getElementById("click").innerHTML = "Thank you for choosing Harmony Home. We look forward to furnishing your world with beauty and comfort."; }
-    </script>
-    <h1>We would like to hear from you</h1> <!-- contact us -->
-    <div class="form">
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <label for="email">Email</label>
-            <input type="text" id="email">
-            <label for="phone">Phone</label>
-            <input type="text" id="phone">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" style="height:100px;"></textarea>
-            <input type="submit" value="submit">
-        </form>
-    </div>
-</body>
-
+        <div class="value">
+            <h2>Our Values</h2>
+            <ol>
+                <li>
+                    <p><span>Quality Craftsmanship:</span>
+                        We source our furniture from skilled artisans who take pride in their work.
+                        Each piece is meticulously crafted to stand the test of time.</p>
+                </li>
+                <li>
+                    <p><span>Timeless Designs:</span>
+                        Our collection features a blend of classic and contemporary designs. 
+                        From mid-century modern to rustic farmhouse, we have something for every taste.</p>
+                </li>
+                <li>
+                    <p><span>Sustainability:</span> We care about the environment. 
+                        That's why we prioritize sustainable materials and eco-friendly practices in
+                        our production process.</p>
+                </li>
+                </ol>
+        </div>
+        <img src="/images/about-contact-us-pic-2.jpg" alt="furniture" style="width:400px;height:300px;float:right;
+        border-radius:10px;">
+        <h2>Our Promise</h2>
+        <p>When you shop with us, you're not just buying furniture; you're investing in comfort, style, 
+            and lasting memories. We're committed to providing exceptional customer service and 
+            ensuring that you find the perfect pieces for your home.</p> 
+        <button type="button" onclick="myfunction()">Click me!</button>
+        <p id="click" style="font-weight:bold;"></p>
+        <script>
+            function myfunction () { document.getElementById("click").innerHTML="Thank you for choosing Harmony Home. We look forward to furnishing your world with beauty and comfort."; }
+        </script>
+        <h1>We would like to hear from you</h1> <!-- contact us -->
+        <div class="form">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" style="height:100px;"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </body>
 </html>
